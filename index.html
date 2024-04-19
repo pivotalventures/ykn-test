@@ -1,79 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en">
+
 <head>
-<title>Project Title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>iFLiUSA</title>
+    <meta name="description" content="International Flight Learning Institute USA, LLC">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "iFLi USA",
+            "url": "https://ifliusa.com"
+        }
+    </script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/boxicons.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="assets/css/css/style.css">
+    <link rel="stylesheet" href="assets/css/vendor/remixicon/remixicon.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper/swiper-bundle.min.css">
 </head>
-<body class="multiple-scenes view-control-buttons">
 
-<div id="pano"></div>
-
-<div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-entrance">
-        <li class="text">Entrance</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-chapel">
-        <li class="text">Chapel</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-pool">
-        <li class="text">Pool</li>
-      </a>
-    
-  </ul>
-</div>
-
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
-
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
-
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
-
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
-
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
-
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
-<script src="data.js"></script>
-<script src="index.js"></script>
-
+<body>
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <h1 class="me-auto logo"><img src="assets/img/Final%20Logo%20Alt%201%20-%20White%20-%20optimized.png"></h1>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="#services">Get Started</a></li>
+                </ul><i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
+    </header>
+    <section class="d-flex align-items-center" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Your Wings Await</h1>
+                    <h2>Unleash Your Inner Aviator with iFLi USA</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start"><a href="#services" class="btn-get-started scrollto">Get Started</a><a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a></div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200"><img class="img-fluid bounce animated" src="assets/img/Final%20Logo-%20White%20Full.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3>Discover the Thrill of Flight</h3>
+                        <p> Ready to take flight? Don't let your dreams stay grounded any longer. Explore our range of comprehensive training programs, experienced instructors, and state-of-the-art facilities. Whether you're an aspiring pilot or looking to advance your skills, iFLiUSA is your ticket to the skies. Let's make your aviation dreams a reality together. Click now to learn more!</p>
+                    </div>
+                    <div class="col-lg-3 text-center cta-btn-container"><a class="cta-btn align-middle" href="#services">Get Started</a></div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Services</h2>
+                    <p>Unlock your potential and soar to new heights with iFLiUSA! Our comprehensive training programs are designed to turn your aviation dreams into reality. Whether you're a beginner looking to take your first solo flight or an experienced pilot aiming for advanced certifications, we have the courses and expertise to help you succeed. With state-of-the-art facilities, experienced instructors, and flexible pricing options, there's never been a better time to pursue your passion for flight. Contact us today to get started on your journey to becoming a skilled and confident pilot!</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                            <h4><a href="">Private Pilot Training Package</a></h4>
+                            <p>Our private pilot training package includes a minimum of 40 flight hours and 20 hours of ground instruction. Work closely with our experienced instructors to master the skills needed to earn your private pilot's license and take to the skies with confidence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-file"></i></div>
+                            <h4><a href="">Instrument Rating Course</a></h4>
+                            <p>Take your flying skills to the next level with our instrument rating course. This comprehensive program covers advanced navigation techniques and instrument flight rules (IFR), preparing you to fly in a wider range of weather conditions and airspace environments.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-tachometer"></i></div>
+                            <h4><a href="">Commercial Pilot Program</a></h4>
+                            <p>Our commercial pilot program is designed for aspiring professional pilots. With a minimum of 250 flight hours and rigorous training in advanced maneuvers and commercial flight operations, you'll be well-prepared to pursue a career in aviation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-layer"></i></div>
+                            <h4><a href="">Aircraft Rental</a></h4>
+                            <p>Already a licensed pilot? Rent one of our well-maintained aircraft for your personal or business travel needs. Our competitive rental rates make it easy to take to the skies whenever you want.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p> Welcome to iFLi USA, your premier destination for aviation enthusiasts and aspiring pilots alike. Founded in February 2024, iFLi USA is dedicated to providing top-notch flight training and education at the Chan Gurney Municipal Airport in Yankton, South Dakota.&nbsp;</p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> Team of Experienced Instructors</li>
+                            <li><i class="ri-check-double-line"></i> Pilot's License Training</li>
+                            <li><i class="ri-check-double-line"></i> Advanced Training for Seasoned Aviators</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>iFLi USA is here to support you every step of the way. Join us on this exhilarating journey through the skies! </p><a href="#" class="btn-learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="team" class="team section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Team</h2>
+                    <p>Get to know the driving force behind iFLIUSA: Meet John and Paul, our dedicated team committed to guiding you through every step of your aviation journey with expertise and passion.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="d-flex align-items-start member">
+                            <div class="pic"><img class="img-fluid" alt="" src="assets/img/g14bcf6e5699f91f0ca3f4d914297fbc55c7b3713befab6e4b016e6c3d20c8357910af78f6d63f9134d5c0845d54e1d54435b0a1de8a30e92c5c3bada04dce964_640-1.jpg"></div>
+                            <div class="member-info">
+                                <h4>John Halsted</h4><span>Founder</span>
+                                <p>John is founder and instructor with iFLiUSA</p>
+                                <div class="social"><a href=""><i class="ri-twitter-fill"></i></a><a href=""><i class="ri-facebook-fill"></i></a><a href=""><i class="ri-instagram-fill"></i></a><a href=""><i class="ri-linkedin-box-fill"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="d-flex align-items-start member">
+                            <div class="pic"><img class="img-fluid" alt="" src="assets/img/g14bcf6e5699f91f0ca3f4d914297fbc55c7b3713befab6e4b016e6c3d20c8357910af78f6d63f9134d5c0845d54e1d54435b0a1de8a30e92c5c3bada04dce964_640.jpg"></div>
+                            <div class="member-info">
+                                <h4>Paul Smith</h4><span>Founder</span>
+                                <p>Paul is founder and instructor with iFLiUSA</p>
+                                <div class="social"><a href=""><i class="ri-twitter-fill"></i></a><a href=""><i class="ri-facebook-fill"></i></a><a href=""><i class="ri-instagram-fill"></i></a><a href=""><i class="ri-linkedin-box-fill"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Whether you're curious about our training programs, facilities, instructors, or career opportunities, we're here to provide you with all the information you need to make informed decisions about your flight training experience. Browse through our frequently asked questions to learn more about what sets iFLi USA apart as your premier destination for flight education.</p>
+                </div>
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Who will be teaching me? <i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p> Our flight school is staffed with experienced and certified flight instructors who have extensive backgrounds in aviation training. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What types of training programs do you offer?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p> We offer comprehensive training programs suitable for individuals at all skill levels, from beginners to advanced pilots. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="300"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What are your facilities like?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our flight school is equipped with state-of-the-art facilities and modern training aircraft to ensure a safe and comfortable learning environment. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="400"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Can I schedule my lessons around my busy schedule?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p> Yes, we understand the demands of modern life, which is why we offer flexible scheduling options to accommodate your needs. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">How will I learn to fly?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our training philosophy emphasizes hands-on learning, allowing you to gain practical experience from day one. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Will I receive personalized instruction?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our training philosophy emphasizes hands-on learning, allowing you to gain practical experience from day one. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Is safety a priority at your flight school?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our training philosophy emphasizes hands-on learning, allowing you to gain practical experience from day one. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What career opportunities can your training lead to?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our training philosophy emphasizes hands-on learning, allowing you to gain practical experience from day one. </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="500"><i class="bx bx-help-circle icon-help"></i><a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">What career opportunities can your training lead to?<i class="bx bx-chevron-down icon-show"></i><i class="icon-close bx bx-chevron-up"></i></a>
+                            <div id="faq-list-9" class="collapse" data-bs-parent=".faq-list">
+                                <p> Our training philosophy emphasizes hands-on learning, allowing you to gain practical experience from day one. </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Get in touch with iFLi USA! Use the contact form below to reach out to our team for inquiries, scheduling, or any assistance you may need. We're here to help you take the first step towards achieving your aviation goals. Simply fill out the form, and we'll get back to you promptly.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 d-flex align-items-stretch">
+                        <div class="info">
+                            <div class="address"><i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>700 E 31st Street<br>Yankton, SD 57078</p>
+                            </div>
+                            <div class="email"><i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>info@ifliusa.com</p>
+                            </div>
+                            <div class="phone"><i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>605.555.5555</p>
+                            </div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0;width:100%;height:290px;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex align-items-stretch mt-5 mt-lg-0">
+                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group"><label class="form-label" for="name">Your Name</label><input class="form-control form-control" type="text" id="name" name="name" required=""></div>
+                                <div class="col-md-6 form-group"><label class="form-label" for="name">Your Email</label><input class="form-control form-control" type="email" id="email" name="email" required=""></div>
+                            </div>
+                            <div class="form-group"><label class="form-label" for="name">Subject</label><input class="form-control form-control" type="text" id="subject" name="subject" required=""></div>
+                            <div class="form-group"><label class="form-label" for="name">Message</label><textarea class="form-control form-control" name="message" required="" rows="10"></textarea></div>
+                            <div class="my-3">
+                                <div class="loading"><span>Loading</span></div>
+                                <div class="error-message"></div>
+                                <div class="sent-message"><span>Your message has been sent. Thank you!</span></div>
+                            </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Stay updated with all things iFLi USA by subscribing to our newsletter!</p>
+                        <form action="" method="post"><input type="email" name="email"><input type="submit" value="Subscribe"></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 footer-contact">
+                        <h3>ifliusa</h3>
+                        <p>700 E 31st Street<br>Yankton, SD 57078<br> United States <br><br><strong>Phone:</strong>&nbsp;605.555.5555<br><strong>Email:</strong> info@ifliusa.com<br></p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Roger Wilco Aviation Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">Chan Gurney Airport</a></li>
+                            <li><i class="bx bx-chevron-right"></i><a href="#">City of Yankton</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3 footer-links">
+                        <h4>Follow Us on Social</h4>
+                        <div class="social-links mt-3"><a href="#" class="twitter"><i class="bx bxl-twitter"></i></a><a href="#" class="facebook"><i class="bx bxl-facebook"></i></a><a href="#" class="instagram"><i class="bx bxl-instagram"></i></a><a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom clearfix">
+            <div class="copyright"><span> © Copyright </span><strong><span>International Flight Learning Institute USA, LLC</span></strong><span>. All Rights Reserved </span></div>
+        </div>
+    </footer><a class="d-flex justify-content-center align-items-center back-to-top" href="#"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/vendor/aos/aos.js"></script>
+    <script src="assets/js/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/js/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/js/main.js"></script>
 </body>
+
 </html>
